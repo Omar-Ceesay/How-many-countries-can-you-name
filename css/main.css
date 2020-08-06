@@ -1,0 +1,26 @@
+#main > * {
+    margin: auto;
+}
+
+.input-name-div {
+    width: 100%;
+}
+
+.input-name-div input {
+    width: 90% !important;
+}
+
+.invalid {
+    box-shadow: 0 0 0 0.2rem rgba(255, 46, 46, 0.541) !important;
+    border-color: rgba(255, 47, 47, 0.548) !important;
+}
+
+.valid {
+    box-shadow: 0 0 0 0.2rem rgba(43, 243, 103, 0.541) !important;
+    border-color: rgba(43, 243, 103, 0.548) !important;
+}
+
+.already-entered {
+    box-shadow: 0 0 0 0.2rem rgba(243, 43, 233, 0.541) !important;
+    border-color: rgba(243, 43, 233, 0.548) !important;
+}

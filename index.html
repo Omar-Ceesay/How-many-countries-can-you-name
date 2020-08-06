@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name a city</title>
+
+    <link rel="stylesheet" href="./css/jquery-jvectormap-2.0.5.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./js/jquery-jvectormap-2.0.5.min.js"></script>
+    <script src="./js/jquery-jvectormap-world-mill.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <div class="container mb-4" style="text-align: center; margin-top: 1.5em">
+        <h2>How many cities in the world can you name?</h2>
+    </div>
+    <div class="container" id="main">
+        <div class="mt-2" style="width: 900px">
+            <div class="form-group input-name-div mb-1">
+                <input type="text" id="name-input" class="form-control" placeholder="Input a city name like 'London' or 'Manaus, BR'" />
+                <button class="btn btn-primary" id="name-input-submit" style="display: none;">Submit</button>
+            </div>
+        </div>
+        <div id="world-map" style="width: 100%; height: 70vh"></div>
+        <div class="row">
+            <button class="btn btn-danger m-3" id="clear-board">Clear board</button>
+            <p class="muted" style="margin: auto 0;"><small>Got something to report? Email me at <a href="mailto: omarceesay531@gmail.com">OmarCeesay531@gmail.com</a></small></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row d-flex">
+            <div class="card col-6" style="width: 36rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Other stats</h5>
+                    <p class="card-text"><strong id="half-a-million">0</strong> of 808 cities with a population greater than 500,000.</p>
+                    <p class="card-text"><strong id="million">0</strong> of 363 cities with a population greater than 1,000,000.</p>
+                    <p class="card-text"><strong id="ten-million">0</strong> of 15 cities with a population greater than 10,000,000.</p>
+                </div>
+            </div>
+            <div class="card col-3">
+                <div class="card-body">
+                    <h5 class="card-title">Biggest cities</h5>
+                    <ol id="biggest-list"></ol>
+                </div>
+            </div>
+            <div class="card col-3">
+                <div class="card-body">
+                    <h5 class="card-title">Smallest cities</h5>
+                    <ol id="smallest-list"></ol>
+                </div>
+            </div>
+            <div class="card col-4 mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Cities entered</h5>
+                    <h6 class="card-subtitle mb-2 text-muted" id="total-population">Total population: 0</h6>
+                    <ol id="city-list" reversed>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
