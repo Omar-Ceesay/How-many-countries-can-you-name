@@ -1,2 +1,2 @@
 # How-many-countries-can-you-name
-#### Check it out [https://how-many-countries-do-you-know.herokuapp.com/]("here")
+#### Check it out [here](https://how-many-countries-do-you-know.herokuapp.com/)
